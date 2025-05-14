@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* Container geral para limitar a largura do conteúdo */
+.container {
+  max-width: 1200px;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  margin: 0;
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Rodapé */
+.creditos {
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* Flex dentro do container do rodapé */
+.creditos .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Alinhamentos */
+.esquerda {
+  text-align: left;
+}
+
+.direita {
+  text-align: right;
+}
