@@ -15,6 +15,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,6 +28,32 @@
       .numero {
         width: 2px;
       }
+
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+       
+       
+        background-color:  gray;
+      }
+
+      tbody> tr:nth-child(2n) {
+        background-color: lightgray;
+
+      }
+      td >.imagens {
+        width: 200px;
+        height: 200px;
+    
+      }
+    .bandeira {
+        border: 2px solid;
+       
+     
+    }
+    
+
+      
 
     </style>
 </head>
@@ -47,54 +74,60 @@
             <tr>
                 <td class="numero">1</td>
                 <td>São Paulo</td>
-                <td>45 973 194</td>
+                <td>45.973.194</td>
 
             </tr>
             <tr>
                  <td>2</td>
                 <td>Minas Gerais</td>
-                <td>21 322 691</td>
+                <td>21.322.691</td>
             </tr>
             <tr>
                  <td>3</td>
                 <td>Rio de Janeiro</td>
-                <td>17 219 679</td>
+                <td>17.219.679</td>
             </tr>
             <tr>
                  <td>4</td>
                 <td>Bahia</td>
-                <td>14 850 513	</td>
+                <td>14.850.513	</td>
             </tr>
             <tr>
                  <td>5</td>
                 <td>Paraná</td>
-                <td>11 824 665</td>
+                <td>11.824.665</td>
             </tr>
 
             <tr>
                  <td>6</td>
                 <td>Rio Grande do SUl</td>
-                <td>11 229915</td>
+                <td>11.229.915</td>
             </tr>
             <tr>
                  <td>7</td>
                 <td>Pernambuco</td>
-                <td>9 539 029</td>
+                <td>9.539.029</td>
             </tr>
             <tr>
                  <td>8</td>
                 <td>Ceará</td>
-                <td>9 233 656</td>
+                <td>9.233.656</td>
             </tr>
             <tr>
                  <td>9</td>
                 <td>Pará</td>
-                <td>8 664 3065</td>
+                <td>8.664.306</td>
             </tr>
             <tr>
                  <td>10</td>
                 <td>Santa Catarina</td>
-                <td>8 058 441</td>
+                <td>8.058.441</td>
+            </tr>
+
+            <tr>
+                 <td>11</td>
+                <td>Goiás</td>
+                <td>7.350.483</td>
             </tr>
 
 
@@ -109,12 +142,13 @@
         </tfoot>
 
     </table>
+
     <script>
         const linhas = document.querySelectorAll('table tbody tr');
 let total = 0;
 
 linhas.forEach(linha => {
-  const texto = linha.cells[2].innerText.replace(/\s/g, ''); // Remove espaços
+  const texto = linha.cells[2].innerText.replace(/\./g, ''); 
   const numero = parseInt(texto, 10);
   if (!isNaN(numero)) {
     total += numero;
@@ -122,7 +156,10 @@ linhas.forEach(linha => {
 });
 
 document.querySelector('table tfoot td').innerText = total.toLocaleString('pt-BR');
+
+
     </script>
+    
     
 </body>
 </html>
