@@ -16,7 +16,7 @@
             font-size: 1.3em;
            }
 
-           th,tr,td {
+           th,td {
             border: 1px solid black;
            }
 
@@ -25,24 +25,30 @@
             height: 200px;
             width: 400px;
            }
-            col .cnome { background-color: rgba(0, 0, 255, 0.381);
 
-            }
-           col.cexo, col.cidade {
-            background-color:rgba(128, 128, 128, 0.489) ;
-
+           col.cnome {
+            background-color: rgba(0, 255, 255, 0.468);
            }
+
+           col.cidade {
+            background-color: rgba(165, 42, 42, 0.36);
+           }
+
+          
+        
+           
 
     </style>
 </head>
 <body>
+    <h1>Exercício de Tabela</h1>
     
     <table>
         <colgroup>
-            <col classe="cnome">
-            <col classe="csexo">
-            <col classe="cidade">
-            <col classe="cprof">
+            <col class="cnome" span="2">
+          
+            <col class="cidade" span="2">
+          
         </colgroup>
         <caption>Cadastro</caption>
         <tr>
