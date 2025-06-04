@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+    <style>
+        pre {
+            white-space: pre-line;
+        }
+
+        .botao{
+          
+            background-color: rgba(128, 255, 0, 0.562);
+        }
+
+        .botao:hover{
+            background-color: rgba(0, 255, 64, 0.426);
+            box-shadow: 1px 1px rgba(251, 249, 249, 0.336);
+            
+        
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <pre>
+                <input type="radio" name="erad" id="irad">Masculino
+                <input type="radio" name="erad" id="irad">Feminino
+            </pre>
+        </fieldset>
+        <fieldset>
+
+
+            <legend>Esportes Favoritos</legend>
+
+
+            <pre>
+                    <input type="checkbox" name="efut" id="ifut" > <label for="ifut">Futebol</label>
+                    <input type="checkbox" name="ebas" id="ibas"> <label for="ibas">Basquete</label>
+                    <input type="checkbox" name="emus" id="imus"> <label for="imus">Musculação</label>
+                    <input type="checkbox" name="enat" id="inat"> <label for="inat">Natação</label>
+                </pre>
+
+
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </div>
+    </form>
+</body>
+
+</html>
