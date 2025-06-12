@@ -1,41 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+        <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Meu site</h1>
-        <menu>
-                <ul>
-                    <a href="#">
-                        <li>home</li>
-                    </a>
-                    <a href="#">
-                        <li>sobre mim</li>
-                    </a>
-                    <a href="#">
-                        <li>Projetos</li>
-                    </a>
-                    <a href="#">
-                        <li>contato</li>
-                    </a>
-                    <a href="#">
-                        <li>avalie</li>
-                    </a>
-                </ul>
+        <h1 id="home" class="home">Meu site</h1>
+        <i id="burguer"><span class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+
+        </span>
+        <menu id="itens">
+            <ul>
+                <a href="#home">
+                    <li>home</li>
+                </a>
+                <a href="#sobre mim">
+                    <li>sobre mim</li>
+                </a>
+                <a href="#projetos">
+                    <li>Projetos</li>
+                </a>
+                <a href="#contato">
+                    <li>contato</li>
+                </a>
+                <a href="#avalie">
+                    <li>avalie</li>
+                </a>
+            </ul>
         </menu>
     </header>
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rerum alias veritatis temporibus eaque, fugit dolor totam laudantium, esse quisquam distinctio accusamus qui eius harum ullam provident quidem repellendus iusto placeat enim doloribus veniam odit maxime. Ab repudiandae veritatis qui laudantium, odit fuga, natus alias ipsum doloribus ut quos explicabo ducimus est corporis officiis voluptates assumenda non quasi voluptas quia. Molestias laudantium minus molestiae alias nostrum. Optio praesentium nesciunt corporis enim voluptas eaque sed provident dolor quam reprehenderit atque voluptatem natus, repellat doloribus voluptates nihil veniam nam ipsam facilis odio. Nesciunt doloremque, quis alias reiciendis eos tempore natus obcaecati dolores officiis optio delectus quas atque distinctio quam? Ut velit dolor, dolores sapiente consequatur beatae voluptatum labore dolorum iure natus hic nesciunt tenetur optio repellat corrupti soluta illo quod delectus perspiciatis suscipit. Rem nihil fuga facilis dicta at id officiis inventore non consequuntur numquam! Fugit quidem hic corporis iure magni vero excepturi quis nostrum voluptatibus, quia ex expedita non dolore? Consequatur reiciendis tempora fuga dolore tempore mollitia dolorum, in dolores saepe officia ducimus maxime fugit repudiandae? Accusantium sunt quibusdam quo ipsam natus culpa vitae beatae voluptatem dicta veniam sapiente vero hic iusto deserunt, ipsum error asperiores blanditiis magnam velit cum iure. Deleniti iusto quia exercitationem perspiciatis amet. Consequuntur eaque saepe molestiae corporis et cupiditate autem quidem nam repellendus, eligendi nemo maiores, quam earum aliquam inventore facilis illo! Saepe, nemo aspernatur maxime amet hic ex neque minus eos fugiat delectus. Aspernatur ipsa alias possimus commodi, vel exercitationem? Doloremque, eius. Tempore cum sed, delectus culpa repellat distinctio odio deleniti. Est obcaecati, dicta ullam architecto reprehenderit fugiat modi voluptatibus rem. Voluptate voluptatibus quia vero nobis a reiciendis, cumque sint molestias pariatur tenetur autem ipsum eligendi suscipit ad magnam ab dolor? Impedit aspernatur, in minima eius placeat ab pariatur ad adipisci tenetur maxime architecto nisi!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, illum! Dolor in quod unde cum aperiam iusto pariatur impedit nobis architecto dolores quas recusandae minus facilis quae aspernatur molestias facere illo, eveniet repellat voluptas maxime eaque aliquid. Tenetur necessitatibus assumenda error suscipit dolore incidunt! Ea quaerat minima repellendus explicabo et aut cupiditate ex suscipit porro optio voluptates, facilis blanditiis corrupti temporibus rem amet laborum. Neque omnis ducimus quod dolor animi. Eos, similique laboriosam. Eos fugit maxime magni incidunt facere error delectus labore eius velit quaerat! Illo repellat facere voluptatibus ut labore facilis sit in praesentium, vel est. Impedit, quo eaque ipsum tenetur, excepturi est enim voluptatem voluptatibus asperiores dolore recusandae fugit distinctio ratione consectetur illo provident maiores non obcaecati. Ad laboriosam pariatur asperiores accusamus, incidunt, vitae, culpa velit illo praesentium vero aliquam! Enim porro, minus eaque quasi non vel sed repudiandae consectetur molestiae esse? Delectus atque cupiditate aperiam laboriosam fugiat dolorum temporibus voluptate odit, eos eligendi aliquid nemo assumenda, non impedit libero beatae, voluptates magnam! Eaque officia, est magni eius impedit labore esse voluptatem veniam, magnam asperiores vero ipsum earum saepe! Fugit perspiciatis laborum voluptatem exercitationem, quo recusandae ipsa consequuntur corrupti ab magni reiciendis eos vero eaque consectetur, culpa expedita?</p>
+            <p id="sobre mim" class="sobre mim"><strong>sobre mim</strong>, dolor sit amet consectetur adipisicing elit. Corrupti rerum alias veritatis temporibus
+                eaque, fugit dolor totam laudantium, esse quisquam distinctio accusamus qui eius harum ullam provident
+                quidem repellendus iusto placeat enim doloribus veniam odit maxime. Ab repudiandae veritatis qui
+                laudantium, odit fuga, natus alias ipsum doloribus ut quos explicabo ducimus est corporis officiis
+                voluptates assumenda non quasi voluptas quia. Molestias laudantium minus molestiae alias nostrum. Optio
+                praesentium nesciunt corporis enim voluptas eaque sed provident dolor quam reprehenderit atque
+                voluptatem natus, repellat doloribus voluptates nihil veniam nam ipsam facilis odio. Nesciunt
+                doloremque, quis alias reiciendis eos tempore natus obcaecati dolores officiis optio delectus quas atque
+                distinctio quam? Ut velit dolor, dolores sapiente consequatur beatae voluptatum labore dolorum iure
+                natus hic nesciunt tenetur optio repellat corrupti soluta illo quod delectus perspiciatis suscipit. Rem
+                nihil fuga facilis dicta at id officiis inventore non consequuntur numquam! Fugit quidem hic corporis
+                iure magni vero excepturi quis nostrum voluptatibus, quia ex expedita non dolore? Consequatur reiciendis
+                tempora fuga dolore tempore mollitia dolorum, in dolores saepe officia ducimus maxime fugit repudiandae?
+                Accusantium sunt quibusdam quo ipsam natus culpa vitae beatae voluptatem dicta veniam sapiente vero hic
+                iusto deserunt, ipsum error asperiores blanditiis magnam velit cum iure. Deleniti iusto quia
+                exercitationem perspiciatis amet. Consequuntur eaque saepe molestiae corporis et cupiditate autem quidem
+                nam repellendus, eligendi nemo maiores, quam earum aliquam inventore facilis illo! Saepe, nemo
+                aspernatur maxime amet hic ex neque minus eos fugiat delectus. Aspernatur ipsa alias possimus commodi,
+                vel exercitationem? Doloremque, eius. Tempore cum sed, delectus culpa repellat distinctio odio deleniti.
+                Est obcaecati, dicta ullam architecto reprehenderit fugiat modi voluptatibus rem. Voluptate voluptatibus
+                quia vero nobis a reiciendis, cumque sint molestias pariatur tenetur autem ipsum eligendi suscipit ad
+                magnam ab dolor? Impedit aspernatur, in minima eius placeat ab pariatur ad adipisci tenetur maxime
+                architecto nisi!</p>
+            <p id="projetos" class="projetos"><strong>projetos</strong>, amet consectetur adipisicing elit. Iusto, illum! Dolor in quod unde cum aperiam
+                iusto pariatur impedit nobis architecto dolores quas recusandae minus facilis quae aspernatur molestias
+                facere illo, eveniet repellat voluptas maxime eaque aliquid. Tenetur necessitatibus assumenda error
+                suscipit dolore incidunt! Ea quaerat minima repellendus explicabo et aut cupiditate ex suscipit porro
+                optio voluptates, facilis blanditiis corrupti temporibus rem amet laborum. Neque omnis ducimus quod
+                dolor animi. Eos, similique laboriosam. Eos fugit maxime magni incidunt facere error delectus labore
+                eius velit quaerat! Illo repellat facere voluptatibus ut labore facilis sit in praesentium, vel est.
+                Impedit, quo eaque ipsum tenetur, excepturi est enim voluptatem voluptatibus asperiores dolore
+                recusandae fugit distinctio ratione consectetur illo provident maiores non obcaecati. Ad laboriosam
+                pariatur asperiores accusamus, incidunt, vitae, culpa velit illo praesentium vero aliquam! Enim porro,
+                minus eaque quasi non vel sed repudiandae consectetur molestiae esse? Delectus atque cupiditate aperiam
+                laboriosam fugiat dolorum temporibus voluptate odit, eos eligendi aliquid nemo assumenda, non impedit
+                libero beatae, voluptates magnam! Eaque officia, est magni eius impedit labore esse voluptatem veniam,
+                magnam asperiores vero ipsum earum saepe! Fugit perspiciatis laborum voluptatem exercitationem, quo
+                recusandae ipsa consequuntur corrupti ab magni reiciendis eos vero eaque consectetur, culpa expedita?
+            </p>
+            <p id="contato" class="contato"><strong>contato</strong> (11)9999-9999, Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, neque! Repudiandae, possimus excepturi ipsa veritatis quidem dicta id voluptatibus, officia explicabo ullam facilis expedita cum assumenda adipisci nostrum sint, rerum soluta aperiam reiciendis? Eos impedit laboriosam magni sit vero voluptatum cupiditate obcaecati modi, dolorum aut similique, dignissimos eligendi maiores ab!
+            </p>
+            <p  id="avalie" class="avalie"> Para nos <strong>avaliar</strong> deixe uma mensagem abaixo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iusto quam numquam minus rerum distinctio quasi veritatis voluptate, vero ipsam animi, nemo commodi sapiente aspernatur! Illum deleniti accusantium sunt natus nesciunt deserunt adipisci sapiente eos, beatae at aliquam? Facere, alias rerum! Exercitationem, est odio odit reiciendis mollitia aliquam doloribus nisi.
+
+            </p>
         </article>
     </main>
-    
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+          
+    </script>
+
 </body>
+
 </html>
